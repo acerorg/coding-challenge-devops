@@ -20,10 +20,6 @@ We will be reviewing your response to the challenge prior to the interview, and 
 This coding challenge is designed to assess the following
 * How do you respond to feedback
 * Understanding scope and constraints
-* Understanding the business drivers and end user needs
-* Designing and Modelling
-* Technical communication, both giving and receiving feedback
-* Problem Solving
 * Quality of code
 * Design and Best practices
 * Maintainability and Extensibility of the code
@@ -61,3 +57,14 @@ Your task involves creating a local development environment using Docker. This d
 1. Create a public repository in GitHub. Set the repository name to a UUID. Generate a [UUID here](https://www.uuidgenerator.net/)
 2. As you develop, make commits to this repository
 3. When completed, send the repository URL through an email to the ACER staff who shared this exercise
+
+## Open questions
+Please also choose one or both of the following open questions, provide your answer(s), and send back through email.
+### Question 1
+Describe how you would approach designing a resilient and fault-tolerant hosting infrastructure with AWS for an application currently running on an on-premises load-balanced cluster of application servers and a single MySQL database server. How would you configure networking within that infrastructure? What AWS services would you use and why?
+### Question 2
+If you are given Windows 10 as your work machine (with 8-core CPUs and 16GB RAM), but you need to work with many Pythons and Linux Bash scripting along with many different Linux based docker containers.
+
+Assuming you cannot change the machine’s operating system and cannot re-partition any of the local HDDs; However, you have admin access to install software and enabling some Windows features.
+
+How would you setup your work environment on your Windows 10 work machine? 
