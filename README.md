@@ -67,4 +67,4 @@ If you are given Windows 10 as your work machine (with 8-core CPUs and 16GB RAM)
 
 Assuming you cannot change the machine’s operating system and cannot re-partition any of the local HDDs; However, you have admin access to install software and enabling some Windows features.
 
-How would you setup your work environment on your Windows 10 work machine? 
+How would you setup your work environment on the machine? 
