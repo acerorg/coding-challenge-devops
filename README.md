@@ -28,7 +28,7 @@ This coding challenge is designed to assess the following
 Your task involves creating a local development environment using Docker. This development environment will be used by software developers to develop a LAMP application. Therefore, it should include:
 1. A **docker-compose.yaml** file which defines 1 network and 3 services:
    * "app" - Apache (or Nginx) + PHP
-   * "db" - A relational database, such as MySQL, MS SqlServer, etc
+   * "db" - A relational database, such as MySQL, MS SQL Server, etc
    * "cache" - A memory cache service, such as Redis, Memcached, etc
 2. The **"app" Docker image** should have related PHP extension bundles built in so that the application can connect to the relational database and memory cache services.
 3. The above Docker images can be either built from Dockerfile or pulled from Docker hubs.
