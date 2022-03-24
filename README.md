@@ -27,10 +27,10 @@ This coding challenge is designed to assess the following
 ## Requirements
 Your task involves creating a local development environment using Docker. This development environment will be used by software developers to develop a LAMP application. Therefore, it should include:
 1. A **docker-compose.yaml** file which defines 1 network and 3 services:
-   * "app" - Apache + PHP
-   * "mysql" - MySQL
-   * "redis" - Redis
-2. The **"app" Docker image** should have related PHP extension bundles built in so that the application can connect to Redis and MySQL services.
+   * "app" - Apache (or Nginx) + PHP
+   * "db" - A relational database, such as MySQL, MS SqlServer, etc
+   * "cache" - A memory cache service, such as Redis, Memcached, etc
+2. The **"app" Docker image** should have related PHP extension bundles built in so that the application can connect to the relational database and memory cache services.
 3. The above Docker images can be either built from Dockerfile or pulled from Docker hubs.
 4. There should be volumes defined for each Docker image so that configuration files (such as http.conf and php.ini) and data files (such as mysql/data) can be organised outside Docker containers.
 5. A shell or Python script **server.sh (or server.py)** should be provided to:
@@ -38,15 +38,15 @@ Your task involves creating a local development environment using Docker. This d
    * start / stop / restart all docker containers
 6. A "readme.md" file to provide the information that necessary for the developers to quickly start their work. The information may be including but not limited to:
    * how to use the script
-   * MySQL connection information
-   * Redis connection information
+   * database connection information
+   * memory cache connection information
 7. The final folder structure may look like
     ```
     /
     |--docker
     |  |--app               // "app" image resources, such as Dockerfile, *.conf, *.ini, etc
-    |  |--mysql             // "mysql" image resoures
-    |  `--redis             // "redis" image resources
+    |  |--db                // database image resoures
+    |  `--cache             // memory cache image resources
     |--docker-compose.yml
     |--readme.md
     |--server.sh            // or server.py
@@ -59,7 +59,7 @@ Your task involves creating a local development environment using Docker. This d
 3. When completed, send the repository URL through an email to the ACER staff who shared this exercise
 
 ## Open questions
-Please also choose one or both of the following open questions, provide your answer(s), and send back through email.
+Please also provide your answers to the following open questions. You may organise the answers in the **readme.md** or a separate file in the same repository.
 ### Question 1
 Describe how you would approach designing a resilient and fault-tolerant hosting infrastructure with AWS for an application currently running on an on-premises load-balanced cluster of application servers and a single MySQL database server. How would you configure networking within that infrastructure? What AWS services would you use and why?
 ### Question 2
