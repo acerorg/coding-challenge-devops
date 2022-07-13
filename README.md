@@ -26,7 +26,7 @@ This coding challenge is designed to assess the following
 *	The maintainability and extensibility of the solution
 
 ## How to submit the coding challenge response back to ACER
-*	Create a public repository in GitHub. Set the repository name to a UUID. (Generate a UUID here.|https://www.uuidgenerator.net/)
+*	Create a public repository in GitHub. Set the repository name to a UUID. [Generate a UUID here](https://www.uuidgenerator.net/).
 *	As you develop, make commits to this repository.
 *	When complete, send the repository URL via email to the ACER staff who shared this exercise.
 
